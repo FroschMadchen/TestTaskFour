@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/hotelFragment">
+
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.example.testtaskfour.presentation.screen.HotelFragment"
+        android:label="fragment_hotel"
+        tools:layout="@layout/fragment_hotel" >
+        <action
+            android:id="@+id/action_hotelFragment_to_hotelRoomFragment"
+            app:destination="@id/hotelRoomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelRoomFragment"
+        android:name="com.example.testtaskfour.presentation.screen.HotelRoomFragment"
+        android:label="fragment_hotel_room"
+        tools:layout="@layout/fragment_hotel_room" >
+        <action
+            android:id="@+id/action_hotelRoomFragment_to_bookingFragment"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.testtaskfour.presentation.screen.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" >
+        <action
+            android:id="@+id/action_bookingFragment_to_paidForFragment"
+            app:destination="@id/paidForFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paidForFragment"
+        android:name="com.example.testtaskfour.presentation.screen.PaidForFragment"
+        android:label="fragment_paid_for"
+        tools:layout="@layout/fragment_paid_for" >
+        <action
+            android:id="@+id/action_paidForFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment" />
+    </fragment>
+</navigation>
