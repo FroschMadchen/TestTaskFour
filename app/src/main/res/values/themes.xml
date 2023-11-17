@@ -7,6 +7,10 @@
 
     <style name="Theme.TestTaskFour" parent="Base.Theme.TestTaskFour" />
 
+    <style name="ShapeAppearanceOverlay.App.CornerSize10Percent" parent="">
+        <item name="cornerSize">20%</item>
+    </style>
+
     <style name="ToolbarTextAppearance" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
         <item name="android:textSize">18sp</item>
         <item name="android:fontFamily">@font/sf_pro_display_bold</item>

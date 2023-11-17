@@ -7,4 +7,6 @@
     <dimen name="padding_start">5dp</dimen>
     <dimen name="padding">10dp</dimen>
     <dimen name="main_pedding_start_end">16dp</dimen>
+    <dimen name="corner_radius">12dp</dimen>
+    <dimen name="padding_item_image">3dp</dimen>
 </resources>

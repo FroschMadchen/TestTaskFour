@@ -29,16 +29,7 @@
         android:label="fragment_booking"
         tools:layout="@layout/fragment_booking" >
         <action
-            android:id="@+id/action_bookingFragment_to_paidForFragment"
-            app:destination="@id/paidForFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/paidForFragment"
-        android:name="com.example.testtaskfour.presentation.screen.PaidForFragment"
-        android:label="fragment_paid_for"
-        tools:layout="@layout/fragment_paid_for" >
-        <action
-            android:id="@+id/action_paidForFragment_to_hotelFragment"
+            android:id="@+id/action_bookingFragment_to_hotelFragment"
             app:destination="@id/hotelFragment" />
     </fragment>
 </navigation>

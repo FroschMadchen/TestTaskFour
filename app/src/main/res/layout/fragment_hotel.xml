@@ -25,12 +25,43 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.viewpager2.widget.ViewPager2
+            <FrameLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="340dp"
+                android:paddingTop="@dimen/padding"
+                android:layout_gravity="center"
+                android:paddingBottom="5dp">
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|bottom"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/box_info"
+                    android:padding="5dp">
+
+                    <com.tbuonomo.viewpagerdotsindicator.SpringDotsIndicator
+                        android:id="@+id/spring_dots_indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal|bottom"
+                        app:dampingRatio="0.5"
+                        app:dotsColor="@color/black"
+                        app:dotsCornerRadius="10dp"
+                        app:dotsSize="12dp"
+                        app:dotsWidthFactor="2.5"
+                        app:dotsSpacing="3dp"
+                        app:dotsStrokeColor="@color/grey_additional_info"
+                        app:dotsStrokeWidth="2dp"
+                        app:progressMode="true"
+                        app:stiffness="200" />
+                </FrameLayout>
+            </FrameLayout>
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -119,6 +150,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sf_pro_display_bold"
                 android:paddingStart="@dimen/padding_start"
+                android:paddingTop="@dimen/padding"
                 android:text="@string/about_hotel"
                 android:textColor="@color/black"
                 android:textSize="@dimen/middle_text" />
@@ -185,8 +217,8 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sf_pro_display_regular"
                 android:paddingTop="5dp"
-                android:textColor="@color/black"
                 android:text="@string/description"
+                android:textColor="@color/black"
                 android:textSize="@dimen/little_text" />
 
             <LinearLayout
@@ -213,8 +245,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="@string/conveniences" />
+                        android:text="@string/conveniences"
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -253,8 +285,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/black"
-                        android:text="@string/included" />
+                        android:text="@string/included"
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -294,7 +326,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/not_included"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -334,13 +366,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/frame_btn"
-                android:textColor="@color/white"
-                android:padding="@dimen/padding"
-                android:textSize="@dimen/little_text"
                 android:fontFamily="@font/sf_pro_display_medium"
+                android:padding="@dimen/padding"
                 android:text="@string/choosing_hotel_room"
                 android:textAllCaps="false"
-                />
+                android:textColor="@color/white"
+                android:textSize="@dimen/little_text" />
         </RelativeLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

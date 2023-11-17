@@ -7,9 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.testtaskfour.R
 
-
 //private const val ARG_PARAM2 = "param2"
-
 
 class BookingFragment : Fragment() {
     override fun onCreateView(
